@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+
+    <!-- CSS Reset Sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron text-center" style="background-color: rgb(126,72,48); color: white">
+                    <h1>
+                        Anytime is Train Time
+                    </h1>
+                    <p>
+                        Choo Choo. Chee Chee.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    Current Train Schedule
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-hover" id="table-employee">
+                                    <thead>
+                                        <tr>
+                                            <th>Train Name</th>
+                                            <th>Destination</th>
+                                            <th>Frequency (min)</th>
+                                            <th>Next Arrival</th>
+                                            <th>Minutes Away</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!--insert row X of user input -->
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Add Train</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class="form-group">
+
+                                        <label for="name-input">
+                                            Train Name
+                                        </label>
+                                        <input type="name" class="form-control" id="name" />
+                                    </div>
+                                    <div class="form-group">
+
+                                        <label for="location-input">
+                                            Destination
+                                        </label>
+                                        <input type="location" class="form-control" id="location" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="time-input">
+                                            First Train Time (HH.mm)
+                                        </label>
+                                        <input type="time" class="form-control" id="time" />
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="rate-input">
+                                            Frequency (min)
+                                        </label>
+                                        <input type="frequency" class="form-control" id="frequencymin" />
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary" id="submitBTN">
+                                        Submit
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <!--jQuery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <!--Momentjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+
+</body>
+
+</html>
